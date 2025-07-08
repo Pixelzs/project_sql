@@ -1,0 +1,3 @@
+-- To Access tables
+-- To Update/Delete
+-- To Sort and Group

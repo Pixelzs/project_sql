@@ -1,0 +1,1 @@
+-- To query and show all data in each table
