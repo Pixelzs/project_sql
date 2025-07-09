@@ -36,3 +36,9 @@ CREATE TABLE IF NOT EXISTS orderItems(
     quantity INT NOT NULL,
     price DECIMAL(19, 4) NOT NULL DEFAULT 0.00
 );
+
+
+CREATE TABLE IF NOT EXISTS categories(
+    category_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(100) NOT NULL UNIQUE
+);

@@ -8,3 +8,5 @@ SELECT * FROM orders;
 
 SELECT * FROM orderitems LIMIT 200;
 
+SELECT * FROM categories;
+
