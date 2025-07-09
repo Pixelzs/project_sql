@@ -1,11 +1,12 @@
 -- Active: 1750669047062@@127.0.0.1@3306@e_commerece_db
 CREATE TABLE IF NOT EXISTS products(
     product_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30) NOT NULL,
+    name VARCHAR(100) NOT NULL,
     description VARCHAR(100) NOT NULL,
     price DECIMAL(19, 4) NOT NULL,
     stock_quantity INT NOT NULL
 );
+
 
 CREATE TABLE IF NOT EXISTS customers(
     customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -33,5 +34,5 @@ CREATE TABLE IF NOT EXISTS orderItems(
     CONSTRAINT fk_product FOREIGN KEY(product_id)
     REFERENCES products(product_id),
     quantity INT NOT NULL,
-    price DECIMAL(19, 4) NOT NULL
+    price DECIMAL(19, 4) NOT NULL DEFAULT 0.00
 );
